@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Converting Images for PK2 Backgrounds</title>
+    </head>
+
+  <body>
+  
+  <!--
+  
+  Sup, this guide was made by Amanda F. aka Player_056 on the Piste Gamez forum v1.1 
+  Changelog:
+  version 1.1 : Expanded what to do for flashing colors
+  
+  -->
+
+    <h1>CONVERTING IMAGES FOR PK2 BACKGROUNDS IN GIMP</h1>
+
+    <h2>Grab your pictures</h2>
+    
+    <br><h8>Open it in GIMP and resize or crop the photo to 640x480</h8><br/>
+    <br><h8>Open and already made background as you’ll need the palette of the image. PK2 uses the background’s palette for the other graphics of the level.</h8><br/>
+    <br><h8>I’ll be using the picture on the right as an example.</h8><br/>
+    
+    <br><img src="/Capture129.PNG"><br/>
+
+    <br><h2>Convert the image</h2><br/>
+    
+    <br><h8>Go to Image, Mode, and then click Indexed</h8><br/>
+    
+    <br><img src="/Capture130.PNG"><br/>
+    
+    <br><h8>In the window that opens click “Use custom palette”, click the palette preview image and the scroll to the top and choose the first option, the palette of the already made background.</h8><br/>
+    
+    <br><h8>Next uncheck "Remove unused and duplicate colors from colormap"</h8><br/>
+    
+    <br><img src="/Capture131.png"><br/>
+    
+    <br><h8>If you like you can pick one of the dithering options, then click convert.</h8><br/>
+    
+    <br><img src="/Capture132.png"><br/>
+    
+    <br><h2>Exporting the background</h2><br/>
+    
+    <br><h8>Finally when exporting the image check "Do not write color space information" under Compatibility options.</h8><br/>
+    
+    <br><h8>Now you have your background.</h8><br/>
+    
+    <br><img src="/Capture136.PNG"><br/>
+
+    <br><h2>Uh Oh...</h2><br/>
+    
+    <br><h8>If you find your background has flashing sections that means when GIMP converted the image it thought that using the colors from the second bottom row of the palette was a good idea. The problem is that this row of the palette is used for shifting colors. The example image has this problem.</h8><br/>
+    
+    <br><h8>In order to fix this you’ll have to switch all of the sections using these colors to use other colors from the palette.</h8><br/>
+    
+    <br><img src="/Capture137.PNG"><br/>
+    
+    <br><h8>Using the "Select by Color Tool" you'll be able to select all pixels using the selected color. Unfortunately selecting colors can't be done through the Colormap window so you will have to remember where the flashing colors are being used.</h8><br/>
+    
+    <br><h8>Depending on your version of GIMP the icon for the "Select by Color Tool" will apear as one of these  two icons.</h8><br/>
+    
+    <br><img src="/Capture138.PNG">
+    
+    <img src="/Capture139.PNG"><br/>
+    
+    <br><h8>Opening the Colormap window will allow you to pick colors from the palette.</h8><br/>
+    
+    <br><img src="/Capture141.PNG">
+    
+    <img src="/Capture140.PNG"><br/>
+
+    <!--<img src="/inchair3.gif">-->
+    
+
+</html>
